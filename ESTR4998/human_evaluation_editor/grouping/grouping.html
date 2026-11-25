@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{label}} · Fresh-response grouping</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/grouping.css">
+  <script src="/grouping.js" defer></script>
+</head>
+<body data-file="{{grouping_csv}}">
+{{nav}}
+<header>
+  <div><span class="eyebrow">{{label}} / SYNTHETIC DEMO / INDEPENDENT GROUPING</span><h1>Fresh-response grouping</h1></div>
+  <a href="/download-grouping" id="download" class="download" hidden>Download my CSV</a>
+</header>
+<main>
+  <details class="instructions" open>
+    <summary>How to group the responses</summary>
+    <p><strong>Work independently.</strong> Read the task and every response in full. Give responses with the same central answer the same group number. The numbers are names for your groups, not scores: group 1 is not better than group 2. There is no target number of groups.</p>
+    <p><strong>Central content.</strong> Two responses belong together when reading the second adds essentially nothing to the substantive answer requested. Wording, formatting, length, names and supporting details alone do not create a new answer. A shared topic, theme or story structure alone does not make two answers the same. For lists, most items must differ to make the answers distinct.</p>
+    <p><strong>Stories:</strong> compare the distinctive premise, central problem, consequential events and resolution. Supporting scenes or dialogue can vary while keeping the same plot. A change to central motivation, mechanism, conflict or resolution can make the answer different.</p>
+    <p><strong>Biographies:</strong> when the task asks for a profession and greatest contribution, compare the substantive achievement. Supporting methods matter when they change that achievement or the task specifically asks how it was discovered. <strong>Backstories:</strong> when the task asks for an origin, materially different causes or consequential histories are central, even if the characters behave similarly now.</p>
+    <p>Always use the task to decide what matters. Grouping is separate from writing quality. Do not use how a response was generated to decide its group.</p>
+    <p><strong>Finish each set:</strong> assign every response, record any earlier exposure, and choose <em>Mark complete</em>. Use <em>Needs discussion</em> with a note for an unresolved judgment. Keep the other member's answers closed until both of you have finished independent checking, including flagging uncertainties. Then preserve those answers and reconcile human differences before viewing any model groups. Your changes save automatically; earlier fixture checks are separate.</p>
+  </details>
+
+  <section id="empty-state" class="empty-state" hidden>
+    <h2>Waiting for fresh responses</h2>
+    <p>No fresh-response sets have been loaded into this sheet yet. There is nothing to rate now. This page will show the prepared sets after they are loaded and you refresh it.</p>
+  </section>
+
+  <div id="workspace" hidden>
+    <section class="toolbar" aria-label="Set navigation">
+      <div><strong id="progress">Loading…</strong><progress id="bar" max="1" value="0"></progress></div>
+      <button id="unchecked" type="button" disabled>Next unfinished</button>
+      <label>Jump to set <select id="jump" aria-label="Jump to set" disabled></select></label>
+    </section>
+    <section class="request">
+      <span id="item-id" class="eyebrow"></span>
+      <h2>Task</h2><p id="task"></p>
+    </section>
+    <section class="group-summary" aria-labelledby="groups-heading">
+      <h2 id="groups-heading">Your groups</h2>
+      <p id="assignment-summary" aria-live="polite"></p>
+      <div id="group-preview"></div>
+    </section>
+    <section id="responses" class="grouping-responses" aria-label="Responses and group assignments"></section>
+    <section class="rating">
+      <h2>Finish this set</h2>
+      <label for="exposure">Had you already read these responses or seen judgments about them before this check?</label>
+      <select id="exposure" disabled>
+        <option value="">Choose an answer</option>
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+        <option value="unsure">Not sure</option>
+      </select>
+      <p class="hint">If yes or not sure, describe what you saw in the note when possible.</p>
+      <label for="note">Note <span>(optional unless the set needs discussion)</span></label>
+      <textarea id="note" rows="4" maxlength="10000" disabled></textarea>
+      <p id="judgment-status" class="judgment-status" aria-live="polite"></p>
+      <p id="completion-hint" class="hint"></p>
+      <div class="finish-actions">
+        <button id="complete" type="button" class="primary" disabled>Mark complete</button>
+        <button id="unsure" type="button" disabled>Needs discussion</button>
+        <button id="draft" type="button" disabled>Keep as draft</button>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <button id="previous" type="button" disabled>← Previous</button>
+    <div id="status" role="status" aria-live="polite">Loading sheet…</div>
+    <button id="retry" type="button">Retry</button>
+    <button id="next" type="button" disabled>Next →</button>
+  </footer>
+</main>
+</body>
+</html>

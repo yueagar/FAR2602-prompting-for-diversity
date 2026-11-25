@@ -1,0 +1,5 @@
+arm,original_mean_k10,repeated_mean_k10,identical_partitions_of_20,changed_counts_of_20,original_ceiling_of_20,repeated_ceiling_of_20,pooled_mean_k20,pooled_ceiling_of_10,original_within_set_partitions_retained_of_20,joined_cross_repetition_pairs_of_1000
+default,7.50,7.20,11,9,8,6,13.0,4,14,239
+naive_creative,9.90,9.90,20,0,18,18,18.3,8,17,32
+manual_causal_shift_v1,9.70,9.60,18,2,15,15,18.7,5,19,10
+manual_alternative_selection_v1,8.25,8.10,18,2,9,9,14.8,3,15,102

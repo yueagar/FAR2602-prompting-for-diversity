@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{label}} · Fixture checks</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/fixtures.css"><script src="/fixtures.js" defer></script></head>
+<body data-file="{{fixture_csv}}">{{nav}}<header><div><span class="eyebrow">{{label}} / SYNTHETIC DEMO / JUDGE FIXTURE CHECKS</span><h1>Fixture checks</h1></div><a href="/download-fixtures" id="download" class="download">Download CSV</a></header><main>
+<section class="toolbar"><div><strong id="progress">Loading…</strong><progress id="bar" max="100" value="0"></progress></div><button id="unchecked">Next unchecked</button><label>Jump to item <select id="jump" aria-label="Jump to item"></select></label></section>
+<details class="instructions"><summary>How to check</summary>
+<p><strong>What this is.</strong> These are the constructed test cases with known answers that every candidate judge will be scored on. A judge can only be shown to work if the cases themselves are right, so check that each one is what its label says. You are not rating quality or diversity.</p>
+<p><strong>Work on your own.</strong> Do not look at the other member's sheet or discuss items until you have both finished. Items marked <em>cross-check</em> or <em>both members</em> are also checked by the other member, and the disagreements are counted as the check's own reliability.</p>
+<p><strong>Outline items:</strong> answer <em>yes</em> only if every outline suits the task and they clearly differ in central content: the events and ending of a story, the central element of a description, a character's motivation and backstory, the central turn of a life. Different names, settings, viewpoints or wording alone do not count. A set is accepted only if both members say yes.</p>
+<p><strong>Response items:</strong> read the outline first, then the response. A variant (duplicate, paraphrase, names changed, padding) must also keep its source's central content; padding must add nothing useful to the task.</p>
+<p><strong>Pair items:</strong> A is the original and B the changed copy. Check that the change is exactly what the category says. For the strict categories, also check the difference is large enough to deserve a different score out of 10; otherwise answer <em>no</em> so the pair is rebuilt.</p>
+<p><strong>Answers:</strong> <em>yes</em>, <em>no</em> or <em>unsure</em>. For every <em>no</em> or <em>unsure</em>, write one sentence in the note saying why. A failed response is replaced by a new one of the same outline and variant type, never relabelled.</p>
+</details>
+<section class="request"><span id="item-id" class="eyebrow"></span><h2 id="heading"></h2><p id="assignment" class="assignment"></p><p id="superseded" class="superseded" hidden>This item is no longer in the latest fixture file (it was replaced or rebuilt). It is kept as a record; it needs no answer.</p><h3>Task</h3><p id="task"></p></section>
+<div id="context" class="text-list context"></div>
+<div id="texts" class="text-list"></div>
+<section class="rating">
+<div class="question" role="group" aria-labelledby="question-1"><h2 id="question-1"></h2><div class="choices" data-answer="answer_1"><button data-value="yes" aria-pressed="false">Yes</button><button data-value="no" aria-pressed="false">No</button><button data-value="unsure" aria-pressed="false">Unsure</button></div></div>
+<div class="question" id="second" role="group" aria-labelledby="question-2"><h2 id="question-2"></h2><div class="choices" data-answer="answer_2"><button data-value="yes" aria-pressed="false">Yes</button><button data-value="no" aria-pressed="false">No</button><button data-value="unsure" aria-pressed="false">Unsure</button></div></div>
+<p class="hint">Select a highlighted answer again to clear it.</p>
+<label for="note">Note <span>(why, for every no or unsure)</span></label><textarea id="note" rows="3" maxlength="10000"></textarea></section>
+<footer><button id="previous">← Previous</button><div id="status" role="status" aria-live="polite">Loading sheet…</div><button id="retry">Retry save</button><button id="next" class="primary">Next →</button></footer></main></body></html>

@@ -1,0 +1,9 @@
+{
+  "SCORE_SYSTEM": "Score the response to the prompt, 1-10, by how well it serves what the prompt asked for.\n\nA prompt that asks for one thing is best served by one thing; elaboration beyond the ask earns nothing, and craft counts where the prompt calls for it.\n10: the best response an expert could give to this prompt.\n7: good, with clear room to improve.\n4: a weak attempt that still answers the prompt.\n1-3: fails the ask: wrong form or scope, off-topic, empty, or a substantive error.\n\nAn unusual angle or format is fine if it answers the prompt.",
+  "JUDGE_SYSTEM": "A language model was asked the same prompt several times. Partition its responses into groups of equivalent answers.\n\nTwo responses are equivalent if a user who had read one would gain essentially nothing from the other: the same central answer, recommendation, plot, argument or image, differing only in wording, formatting, length, ordering or minor detail. They are distinct if the central content differs, even when structure or register is shared. A list is distinct only if most of its items differ.",
+  "upstream_commit": "64a23be6b18ec1dacc298830aab276061b6e143c",
+  "sha256": {
+    "SCORE_SYSTEM": "c733873476ded31b4d24fc60241129ce345544795663d2ed3940f4ca2441a24d",
+    "JUDGE_SYSTEM": "5df0b3a31c86ea37e15b17348a34ad064790b670be345dd93fcd0a4d18385eca"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "protocol": "estr-openrouter-research-v1",
+  "approved_by": [],
+  "decision_reference": "",
+  "freeze_commit": null,
+  "generators": [
+    {
+      "label": "anchor",
+      "model": "REPLACE/open-weight-generator",
+      "provider": "REPLACE-provider",
+      "family": "qwen",
+      "reserve_usd": 0.02,
+      "endpoint_snapshot": null
+    }
+  ],
+  "judges": [
+    {
+      "label": "gemini",
+      "model": "REPLACE/dated-gemini",
+      "provider": "REPLACE-provider",
+      "family": "google",
+      "reserve_usd": 0.02,
+      "endpoint_snapshot": null,
+      "parameters": {
+        "max_tokens": 4096
+      },
+      "json_schema": false
+    },
+    {
+      "label": "gpt",
+      "model": "REPLACE/dated-gpt",
+      "provider": "REPLACE-provider",
+      "family": "openai",
+      "reserve_usd": 0.02,
+      "endpoint_snapshot": null,
+      "parameters": {
+        "max_tokens": 4096
+      },
+      "json_schema": false
+    },
+    {
+      "label": "claude",
+      "model": "REPLACE/dated-claude",
+      "provider": "REPLACE-provider",
+      "family": "anthropic",
+      "reserve_usd": 0.02,
+      "endpoint_snapshot": null,
+      "parameters": {
+        "max_tokens": 4096
+      },
+      "json_schema": false
+    }
+  ],
+  "arms": [
+    {
+      "id": "default",
+      "instruction": "",
+      "decoding_overrides": {}
+    },
+    {
+      "id": "naive_creative",
+      "instruction": "Generate a creative and unusual response.",
+      "decoding_overrides": {}
+    },
+    {
+      "id": "manual_causal_shift_v1",
+      "instruction": "Choose an unconventional but plausible cause, motivation, or consequence for unspecified central content, preserving all stated facts, requirements, and requested format.",
+      "decoding_overrides": {}
+    },
+    {
+      "id": "manual_alternative_selection_v1",
+      "instruction": "Consider several different central ideas, then develop one coherent answer without listing alternatives or explaining your selection, preserving every requirement of the request.",
+      "decoding_overrides": {}
+    }
+  ],
+  "generation": {
+    "max_tokens": 512,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "repetition_penalty": 1.1,
+    "seed": 20261110
+  },
+  "repetitions": 2,
+  "seed": 20261110,
+  "grouping_gates": {
+    "ten": {
+      "count_mae_max": null,
+      "count_worst_max": null,
+      "false_merge_rate_max": null,
+      "false_split_rate_max": null,
+      "count_spread_max": null,
+      "failed_count_penalty": null,
+      "tie_band": null,
+      "ranking": null,
+      "zero_pair_denominator": null,
+      "decision_reference": null
+    },
+    "twenty": {
+      "count_mae_max": null,
+      "count_worst_max": null,
+      "false_merge_rate_max": null,
+      "false_split_rate_max": null,
+      "count_spread_max": null,
+      "failed_count_penalty": null,
+      "tie_band": null,
+      "ranking": null,
+      "zero_pair_denominator": null,
+      "decision_reference": null
+    }
+  },
+  "judge_preference": [
+    "gemini",
+    "gpt",
+    "claude"
+  ],
+  "limits": {
+    "max_requests": 10000,
+    "max_cost_usd": 10,
+    "timeout_seconds": 120
+  },
+  "freeze_file": "protocol.frozen.json",
+  "analysis": {
+    "references": [
+      "default"
+    ],
+    "primary_contrasts": [],
+    "decision_reference": ""
+  },
+  "quality_guard": {
+    "reference": "default",
+    "margins": {
+      "quality": null,
+      "constraint_satisfaction": null
+    },
+    "decision_reference": "",
+    "support_policy": null,
+    "support_policies": {
+      "quality": null,
+      "constraint_satisfaction": null
+    }
+  },
+  "template_notes": [
+    "Analysis is pending: name primary_contrasts as arm/reference/measure objects and cite the decision. Add a chosen decoding arm to analysis.references for direct contrasts if that comparator is retained. Default comparisons remain available; the code does not choose a primary claim.",
+    "Set quality_guard.support_policies separately for quality (ten eligible development tasks) and constraint_satisfaction (six). The shared support_policy remains a legacy fallback; no numerical support rule or margin is chosen by this template.",
+    "Judge temperature: set temperature=0 only where the selected endpoint snapshot lists support; otherwise omit it and record the provider default. Do not infer support from the family name.",
+    "The entire generation block is illustrative historical local sampling, not an adopted API default. the study owner must freeze either the second contributor sampling (temperature 0.8, top_p 0.95, top_k 0, min_p 0) or verified chosen-model defaults. repetition_penalty=1.1 is also unapproved and changes measured diversity."
+  ]
+}

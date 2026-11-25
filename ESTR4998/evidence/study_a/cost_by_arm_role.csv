@@ -1,0 +1,13 @@
+arm,role,attempts,known_usd,unknown_cost_attempts
+default,generation,200,0.018780916,0
+default,grouping,27,0.176044800,0
+default,quality,263,0.272290150,0
+manual_alternative_selection_v1,generation,200,0.013472256,0
+manual_alternative_selection_v1,grouping,26,0.153883175,0
+manual_alternative_selection_v1,quality,264,0.254363750,0
+manual_causal_shift_v1,generation,200,0.015797992,0
+manual_causal_shift_v1,grouping,26,0.151025175,0
+manual_causal_shift_v1,quality,261,0.259174000,0
+naive_creative,generation,200,0.018504752,0
+naive_creative,grouping,26,0.164755425,0
+naive_creative,quality,262,0.273074150,0

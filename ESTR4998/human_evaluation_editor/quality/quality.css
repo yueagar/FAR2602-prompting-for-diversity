@@ -1,0 +1,9 @@
+/* Quality sheet additions; the base look comes from /style.css. */
+.responses.single{grid-template-columns:1fr}
+.rating .judge-only{color:inherit;line-height:1.6}
+.dimension{border-top:1px solid #e3e8df;padding-top:16px;margin-top:16px}
+.rating .rubric{color:inherit;line-height:1.6;margin:0 0 12px}
+.choices.scale{margin-bottom:4px}
+.choices.scale button{min-width:56px;font-weight:600}
+.rating .hint{font-size:14px;margin:16px 0 24px}
+@media(max-width:700px){.choices.scale button{flex:1;min-width:0;padding:11px 0}}

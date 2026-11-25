@@ -1,0 +1,21 @@
+{
+  "schema": "local-interval-sensitivity-plot-manifest-v1",
+  "post_hoc": true,
+  "plot_sha256": "e73001123ff5bede63ce45d4fff2387256d9ec73b00a90d7d17d4a2f68f2aacb",
+  "summary_sha256": "2afc90fc10783fb089a02a378d92d494cd3ce70ecdfde30f3dec3e2889064a44",
+  "figures_sha256": {
+    "local_unified_sensitivity.png": "fb92cb64bd08617af076c8397cd1b274806594eaf79f485f7c31359e13e0b975",
+    "local_unified_sensitivity.svg": "4ce913bfb63f6cf90a1b464be100b29632e810538ec2e3524565709ad38f8e2a"
+  },
+  "panels": [
+    "functional_classes",
+    "semantic_diversity",
+    "quality_mean"
+  ],
+  "methods": [
+    "stored_percentile_task_bootstrap",
+    "paired_t_sensitivity"
+  ],
+  "external_api_calls": 0,
+  "new_generator_responses": 0
+}

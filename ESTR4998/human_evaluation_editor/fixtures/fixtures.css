@@ -1,0 +1,15 @@
+/* Fixture-checking additions; the base look comes from /style.css. */
+.request h3{font-size:16px;margin:18px 0 0;color:#446055}
+.request .assignment{margin:4px 0 0;color:#5b6c63;font-size:14px}
+.request .superseded{margin:12px 0 0;padding:10px 14px;border-radius:8px;border:1px solid #d9c9a7;background:#fbf6ea}
+.text-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.text-list:empty{display:none}
+.text-list article{border:1px solid #dce2d6;border-radius:12px;background:white;padding:20px 24px}
+.text-list article:only-child{grid-column:1/-1}
+.text-list.context article{background:#f8faf5;border-style:dashed}
+.text-list h3{font-size:16px;margin:0 0 10px;color:#446055;border-bottom:1px solid #e3e8df;padding-bottom:10px}
+.question{margin-top:6px}
+.question h2{margin-bottom:12px;line-height:1.4}
+.rating .hint{font-size:14px;margin:0 0 22px}
+[hidden]{display:none!important}
+@media(max-width:700px){.text-list{grid-template-columns:1fr}.text-list article{padding:18px}}

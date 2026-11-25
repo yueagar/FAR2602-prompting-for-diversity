@@ -1,0 +1,91 @@
+{
+  "known_usd": 1.771166541,
+  "attempts": 1955,
+  "arms": {
+    "default": {
+      "distinct_count": 7.5,
+      "quality": 9.35
+    },
+    "naive_creative": {
+      "distinct_count": 9.9,
+      "quality": 9.475,
+      "distinct_count_contrast": {
+        "interval": [
+          0.75,
+          4.35
+        ],
+        "delta": 2.4
+      },
+      "constraint_satisfaction_contrast": {
+        "interval": [
+          -0.10833333333333331,
+          0
+        ],
+        "delta": -0.04166666666666665,
+        "guard": "inconclusive"
+      },
+      "quality_contrast": {
+        "interval": [
+          -0.02500000000000018,
+          0.28000000000000025
+        ],
+        "delta": 0.12499999999999964,
+        "guard": "non_inferior"
+      }
+    },
+    "manual_causal_shift_v1": {
+      "distinct_count": 9.7,
+      "quality": 9.52,
+      "distinct_count_contrast": {
+        "interval": [
+          0.55,
+          4.15
+        ],
+        "delta": 2.2
+      },
+      "constraint_satisfaction_contrast": {
+        "interval": [
+          -0.01666666666666668,
+          0.15833333333333335
+        ],
+        "delta": 0.05000000000000001,
+        "guard": "non_inferior"
+      },
+      "quality_contrast": {
+        "interval": [
+          0.04500000000000046,
+          0.28500000000000014
+        ],
+        "delta": 0.1700000000000001,
+        "guard": "non_inferior"
+      }
+    },
+    "manual_alternative_selection_v1": {
+      "distinct_count": 8.25,
+      "quality": 9.665,
+      "distinct_count_contrast": {
+        "interval": [
+          -0.6,
+          2.3
+        ],
+        "delta": 0.75
+      },
+      "constraint_satisfaction_contrast": {
+        "interval": [
+          0,
+          0.03333333333333336
+        ],
+        "delta": 0.01666666666666668,
+        "guard": "non_inferior"
+      },
+      "quality_contrast": {
+        "interval": [
+          0.16499999999999898,
+          0.46999999999999853
+        ],
+        "delta": 0.31499999999999934,
+        "guard": "non_inferior"
+      }
+    }
+  }
+}

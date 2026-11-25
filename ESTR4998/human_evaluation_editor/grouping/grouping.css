@@ -1,0 +1,25 @@
+/* Fresh grouping uses the shared editor styles and keeps full texts readable. */
+[hidden]{display:none!important}
+.instructions p:last-child{margin-bottom:0}
+.empty-state{margin-top:24px;padding:24px;border:1px dashed #9cab9b;border-radius:12px;background:#fff;line-height:1.65}
+.group-summary{margin:20px 0;padding:18px 22px;background:#edf2e8;border:1px solid #cedaca;border-radius:12px}
+.group-summary h2{margin-bottom:8px}
+.group-summary p{margin:0 0 10px}
+#group-preview{display:flex;gap:8px;flex-wrap:wrap}
+.group-chip{padding:7px 11px;background:#fff;border:1px solid #c4d2c4;border-radius:8px;line-height:1.5;font-size:14px}
+.grouping-responses{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.grouping-responses article{padding:22px;background:#fff;border:1px solid #dce2d6;border-radius:12px;min-width:0}
+.grouping-responses h3{font-size:17px;margin:0 0 12px;color:#446055}
+.grouping-responses .response{font-size:16px;line-height:1.75}
+.grouping-responses .empty-response{font-style:italic;color:#66776b}
+.group-control{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:16px;margin-top:18px;border-top:1px solid #e3e8df}
+.group-control label{font-weight:600}
+.group-control select{flex:1;min-width:140px}
+.rating{padding:24px;background:#fff;border:1px solid #dce2d6;border-radius:12px}
+.rating .hint{font-size:14px;line-height:1.5}
+.rating #exposure{max-width:100%;margin-bottom:0}
+.rating .judgment-status{font-weight:650;color:#253330;margin:20px 0 8px}
+.finish-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.toolbar select{max-width:100%}
+button:focus-visible,select:focus-visible,a:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #b77912;outline-offset:3px}
+@media(max-width:760px){.grouping-responses{grid-template-columns:1fr}.grouping-responses article,.rating{padding:18px}.finish-actions button{flex:1;min-width:150px}.group-summary{padding:16px}.toolbar label{display:flex;gap:8px;align-items:center;flex-wrap:wrap}}

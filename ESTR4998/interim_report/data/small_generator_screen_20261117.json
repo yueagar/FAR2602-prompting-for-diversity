@@ -1,0 +1,1485 @@
+{
+  "candidates": [
+    {
+      "available_set_diagnostics": {
+        "complete_sets_with_exact_duplicates": 1,
+        "hydrogen_exact_count_pairs": 16,
+        "hydrogen_exact_partition_pairs": 16,
+        "hydrogen_mean_absolute_count_difference": 0.1111111111111111,
+        "hydrogen_mean_ari": 0.9123931623931624,
+        "hydrogen_repeat_pairs": 18,
+        "luna_hydrogen_comparisons": 36,
+        "luna_hydrogen_exact_partition_pairs": 16,
+        "luna_hydrogen_mean_absolute_count_difference": 0.7777777777777778,
+        "luna_hydrogen_mean_ari": 0.5329621684573527
+      },
+      "coverage": {
+        "complete_response_sets": 18,
+        "generated_outputs": 198,
+        "hydrogen_partitions": 36,
+        "luna_partitions": 18,
+        "quality_scores": 198,
+        "tasks_with_both_sets_complete": 9
+      },
+      "label": "llama31_8b",
+      "posthoc_logical_bounds": [
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.5,
+          "ceiling_share_upper_bound": 0.6,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 9.5,
+          "median_upper_bound": 10.0,
+          "missing_tasks": 1,
+          "observation": 0,
+          "observed_ceiling_tasks": 5,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 0
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.6,
+          "ceiling_share_upper_bound": 0.7,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 10.0,
+          "median_upper_bound": 10.0,
+          "missing_tasks": 1,
+          "observation": 1,
+          "observed_ceiling_tasks": 6,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 0
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.4,
+          "ceiling_share_upper_bound": 0.5,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 9.0,
+          "median_upper_bound": 9.5,
+          "missing_tasks": 1,
+          "observation": 0,
+          "observed_ceiling_tasks": 4,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 1
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.4,
+          "ceiling_share_upper_bound": 0.5,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 9.0,
+          "median_upper_bound": 9.5,
+          "missing_tasks": 1,
+          "observation": 1,
+          "observed_ceiling_tasks": 4,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 1
+        }
+      ],
+      "source_candidate": {
+        "complete": false,
+        "constraint_expected": 120,
+        "constraint_observed": 120,
+        "constraint_passes": 99,
+        "count_vectors": [
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              8,
+              10,
+              7,
+              6,
+              10,
+              null,
+              10,
+              10,
+              9,
+              10
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 0,
+            "repetition": 0,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              8,
+              10,
+              7,
+              6,
+              10,
+              null,
+              10,
+              10,
+              10,
+              10
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 1,
+            "repetition": 0,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              10,
+              10,
+              4,
+              6,
+              10,
+              null,
+              9,
+              10,
+              8,
+              9
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 0,
+            "repetition": 1,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              10,
+              10,
+              4,
+              7,
+              10,
+              null,
+              9,
+              10,
+              8,
+              9
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 1,
+            "repetition": 1,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          }
+        ],
+        "expected_outputs": 200,
+        "expected_sets": 20,
+        "generation_diagnostics": {
+          "empty": 0,
+          "refusal": 0,
+          "truncated": 0
+        },
+        "generation_diagnostics_valid_output_denominator": 198,
+        "label": "llama31_8b",
+        "mean_check_count": null,
+        "mean_exact_duplicate_rate": null,
+        "mean_merged_pair_fraction": null,
+        "mean_non_singleton_response_share": null,
+        "mean_primary_count": null,
+        "mean_quality": null,
+        "mean_words": null,
+        "model": "meta-llama/llama-3.1-8b-instruct",
+        "mostly_merged_target_met": false,
+        "non_singleton_response_share_by_observation": [
+          null,
+          null
+        ],
+        "observed_outputs": 198,
+        "operational_floors": {
+          "complete": false,
+          "constraints": false,
+          "generation_feasibility": false,
+          "headroom": false,
+          "quality": true,
+          "reasoning_controls": true,
+          "repeatability": true
+        },
+        "operationally_feasible": false,
+        "original_parser_constraint_passes": 99,
+        "per_task": [
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 7.0,
+            "mean_primary_count": 9.0,
+            "mean_quality": 8.4,
+            "mean_words": 127.4,
+            "non_singleton_response_share_by_observation": [
+              0.2,
+              0.2
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-0",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 9.0,
+            "mean_primary_count": 10.0,
+            "mean_quality": 6.1,
+            "mean_words": 408.95,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 15,
+            "refusal": 0,
+            "task": "curated-10",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 5.5,
+            "mean_primary_count": 5.5,
+            "mean_quality": 8.65,
+            "mean_words": 18.75,
+            "non_singleton_response_share_by_observation": [
+              0.65,
+              0.65
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-16",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 8.0,
+            "mean_primary_count": 6.25,
+            "mean_quality": 6.6,
+            "mean_words": 336.8,
+            "non_singleton_response_share_by_observation": [
+              0.6,
+              0.5
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 19,
+            "refusal": 0,
+            "task": "curated-18",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 0,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 10.0,
+            "mean_primary_count": 10.0,
+            "mean_quality": 8.35,
+            "mean_words": 159.95,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-2",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": null,
+            "mean_primary_count": null,
+            "mean_quality": null,
+            "mean_words": null,
+            "non_singleton_response_share_by_observation": [
+              null,
+              null
+            ],
+            "observed_outputs": 18,
+            "quality_at_least_six": 16,
+            "refusal": 0,
+            "task": "curated-6",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 9.5,
+            "mean_primary_count": 9.5,
+            "mean_quality": 8.35,
+            "mean_words": 226.4,
+            "non_singleton_response_share_by_observation": [
+              0.1,
+              0.1
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-7",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 9.0,
+            "mean_primary_count": 10.0,
+            "mean_quality": 7.75,
+            "mean_words": 332.75,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-8",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 19,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 8.0,
+            "mean_primary_count": 8.75,
+            "mean_quality": 6.65,
+            "mean_words": 127.1,
+            "non_singleton_response_share_by_observation": [
+              0.30000000000000004,
+              0.2
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 18,
+            "refusal": 0,
+            "task": "narrative-dev-01",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 9.0,
+            "mean_primary_count": 9.5,
+            "mean_quality": 7.8,
+            "mean_words": 128.25,
+            "non_singleton_response_share_by_observation": [
+              0.1,
+              0.1
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "narrative-dev-02",
+            "truncated": 0
+          }
+        ],
+        "provider": "deepinfra/fp8",
+        "quality_at_least_six": 188,
+        "repeat_count_close_sets": 18,
+        "returned_failure_diagnostics": {
+          "content_filtered": 0,
+          "empty_text": 0,
+          "missing_text": 0,
+          "observations": 0,
+          "truncated": 0
+        }
+      },
+      "threshold_support": {
+        "constraints_ge_108_of_120": "unattainable_even_if_all_missing_succeed",
+        "quality_ge_180_of_200": "met_by_known_observations",
+        "repeat_count_close_ge_18_of_20": "met_by_known_observations"
+      }
+    },
+    {
+      "available_set_diagnostics": {
+        "complete_sets_with_exact_duplicates": 2,
+        "hydrogen_exact_count_pairs": 14,
+        "hydrogen_exact_partition_pairs": 14,
+        "hydrogen_mean_absolute_count_difference": 0.35294117647058826,
+        "hydrogen_mean_ari": 0.8663101604278075,
+        "hydrogen_repeat_pairs": 17,
+        "luna_hydrogen_comparisons": 34,
+        "luna_hydrogen_exact_partition_pairs": 19,
+        "luna_hydrogen_mean_absolute_count_difference": 0.7058823529411765,
+        "luna_hydrogen_mean_ari": 0.6389305457660958
+      },
+      "coverage": {
+        "complete_response_sets": 17,
+        "generated_outputs": 196,
+        "hydrogen_partitions": 34,
+        "luna_partitions": 17,
+        "quality_scores": 196,
+        "tasks_with_both_sets_complete": 8
+      },
+      "label": "llama32_3b",
+      "posthoc_logical_bounds": [
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.4,
+          "ceiling_share_upper_bound": 0.5,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 7.5,
+          "median_upper_bound": 9.0,
+          "missing_tasks": 1,
+          "observation": 0,
+          "observed_ceiling_tasks": 4,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 0
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.6,
+          "ceiling_share_upper_bound": 0.7,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 10.0,
+          "median_upper_bound": 10.0,
+          "missing_tasks": 1,
+          "observation": 1,
+          "observed_ceiling_tasks": 6,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 0
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.4,
+          "ceiling_share_upper_bound": 0.6,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": false,
+          "median_lower_bound": 7.0,
+          "median_upper_bound": 10.0,
+          "missing_tasks": 2,
+          "observation": 0,
+          "observed_ceiling_tasks": 4,
+          "observed_tasks": 8,
+          "planned_tasks": 10,
+          "repetition": 1
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.4,
+          "ceiling_share_upper_bound": 0.6,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": false,
+          "median_lower_bound": 7.0,
+          "median_upper_bound": 10.0,
+          "missing_tasks": 2,
+          "observation": 1,
+          "observed_ceiling_tasks": 4,
+          "observed_tasks": 8,
+          "planned_tasks": 10,
+          "repetition": 1
+        }
+      ],
+      "source_candidate": {
+        "complete": false,
+        "constraint_expected": 120,
+        "constraint_observed": 120,
+        "constraint_passes": 119,
+        "count_vectors": [
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              5,
+              10,
+              3,
+              4,
+              10,
+              null,
+              10,
+              10,
+              8,
+              7
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 0,
+            "repetition": 0,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              5,
+              10,
+              3,
+              5,
+              10,
+              null,
+              10,
+              10,
+              10,
+              10
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 1,
+            "repetition": 0,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              5,
+              10,
+              2,
+              4,
+              10,
+              null,
+              null,
+              10,
+              9,
+              10
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 0,
+            "repetition": 1,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              5,
+              10,
+              2,
+              4,
+              10,
+              null,
+              null,
+              10,
+              9,
+              10
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 1,
+            "repetition": 1,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          }
+        ],
+        "expected_outputs": 200,
+        "expected_sets": 20,
+        "generation_diagnostics": {
+          "empty": 0,
+          "refusal": 0,
+          "truncated": 0
+        },
+        "generation_diagnostics_valid_output_denominator": 196,
+        "label": "llama32_3b",
+        "mean_check_count": null,
+        "mean_exact_duplicate_rate": null,
+        "mean_merged_pair_fraction": null,
+        "mean_non_singleton_response_share": null,
+        "mean_primary_count": null,
+        "mean_quality": null,
+        "mean_words": null,
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "mostly_merged_target_met": false,
+        "non_singleton_response_share_by_observation": [
+          null,
+          null
+        ],
+        "observed_outputs": 196,
+        "operational_floors": {
+          "complete": false,
+          "constraints": true,
+          "generation_feasibility": false,
+          "headroom": false,
+          "quality": true,
+          "reasoning_controls": true,
+          "repeatability": false
+        },
+        "operationally_feasible": false,
+        "original_parser_constraint_passes": 119,
+        "per_task": [
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 5.0,
+            "mean_primary_count": 5.0,
+            "mean_quality": 8.7,
+            "mean_words": 123.95,
+            "non_singleton_response_share_by_observation": [
+              0.6499999999999999,
+              0.6499999999999999
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-0",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 10.0,
+            "mean_primary_count": 10.0,
+            "mean_quality": 6.25,
+            "mean_words": 471.2,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 17,
+            "refusal": 0,
+            "task": "curated-10",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 2.5,
+            "mean_primary_count": 2.5,
+            "mean_quality": 9.7,
+            "mean_words": 2.5,
+            "non_singleton_response_share_by_observation": [
+              1.0,
+              1.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-16",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 3.0,
+            "mean_primary_count": 4.25,
+            "mean_quality": 6.45,
+            "mean_words": 297.25,
+            "non_singleton_response_share_by_observation": [
+              0.7,
+              0.6499999999999999
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 18,
+            "refusal": 0,
+            "task": "curated-18",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 8.5,
+            "mean_primary_count": 10.0,
+            "mean_quality": 8.4,
+            "mean_words": 129.5,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-2",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": null,
+            "mean_primary_count": null,
+            "mean_quality": null,
+            "mean_words": null,
+            "non_singleton_response_share_by_observation": [
+              null,
+              null
+            ],
+            "observed_outputs": 17,
+            "quality_at_least_six": 15,
+            "refusal": 0,
+            "task": "curated-6",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": null,
+            "mean_primary_count": null,
+            "mean_quality": null,
+            "mean_words": null,
+            "non_singleton_response_share_by_observation": [
+              null,
+              null
+            ],
+            "observed_outputs": 19,
+            "quality_at_least_six": 19,
+            "refusal": 0,
+            "task": "curated-7",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 10.0,
+            "mean_primary_count": 10.0,
+            "mean_quality": 7.65,
+            "mean_words": 300.85,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-8",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 19,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 8.0,
+            "mean_primary_count": 9.0,
+            "mean_quality": 6.3,
+            "mean_words": 148.5,
+            "non_singleton_response_share_by_observation": [
+              0.25,
+              0.1
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 15,
+            "refusal": 0,
+            "task": "narrative-dev-01",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 9.0,
+            "mean_primary_count": 9.25,
+            "mean_quality": 7.75,
+            "mean_words": 123.35,
+            "non_singleton_response_share_by_observation": [
+              0.2,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "narrative-dev-02",
+            "truncated": 0
+          }
+        ],
+        "provider": "cloudflare",
+        "quality_at_least_six": 184,
+        "repeat_count_close_sets": 15,
+        "returned_failure_diagnostics": {
+          "content_filtered": 0,
+          "empty_text": 0,
+          "missing_text": 0,
+          "observations": 4,
+          "truncated": 0
+        }
+      },
+      "threshold_support": {
+        "constraints_ge_108_of_120": "met_by_known_observations",
+        "quality_ge_180_of_200": "met_by_known_observations",
+        "repeat_count_close_ge_18_of_20": "unresolved_due_to_missing_observations"
+      }
+    },
+    {
+      "available_set_diagnostics": {
+        "complete_sets_with_exact_duplicates": 0,
+        "hydrogen_exact_count_pairs": 13,
+        "hydrogen_exact_partition_pairs": 13,
+        "hydrogen_mean_absolute_count_difference": 0.35294117647058826,
+        "hydrogen_mean_ari": 0.8330928014084591,
+        "hydrogen_repeat_pairs": 17,
+        "luna_hydrogen_comparisons": 34,
+        "luna_hydrogen_exact_partition_pairs": 10,
+        "luna_hydrogen_mean_absolute_count_difference": 1.2941176470588236,
+        "luna_hydrogen_mean_ari": 0.4370192288601182
+      },
+      "coverage": {
+        "complete_response_sets": 17,
+        "generated_outputs": 190,
+        "hydrogen_partitions": 34,
+        "luna_partitions": 17,
+        "quality_scores": 190,
+        "tasks_with_both_sets_complete": 7
+      },
+      "label": "qwen35_9b",
+      "posthoc_logical_bounds": [
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.5,
+          "ceiling_share_upper_bound": 0.6,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 9.5,
+          "median_upper_bound": 10.0,
+          "missing_tasks": 1,
+          "observation": 0,
+          "observed_ceiling_tasks": 5,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 0
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.7,
+          "ceiling_share_upper_bound": 0.8,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 10.0,
+          "median_upper_bound": 10.0,
+          "missing_tasks": 1,
+          "observation": 1,
+          "observed_ceiling_tasks": 7,
+          "observed_tasks": 9,
+          "planned_tasks": 10,
+          "repetition": 0
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.3,
+          "ceiling_share_upper_bound": 0.5,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 7.5,
+          "median_upper_bound": 9.5,
+          "missing_tasks": 2,
+          "observation": 0,
+          "observed_ceiling_tasks": 3,
+          "observed_tasks": 8,
+          "planned_tasks": 10,
+          "repetition": 1
+        },
+        {
+          "ceiling_rule_impossible": true,
+          "ceiling_share_lower_bound": 0.3,
+          "ceiling_share_upper_bound": 0.5,
+          "median_le_five_impossible": true,
+          "median_le_seven_impossible": true,
+          "median_lower_bound": 8.0,
+          "median_upper_bound": 9.5,
+          "missing_tasks": 2,
+          "observation": 1,
+          "observed_ceiling_tasks": 3,
+          "observed_tasks": 8,
+          "planned_tasks": 10,
+          "repetition": 1
+        }
+      ],
+      "source_candidate": {
+        "complete": false,
+        "constraint_expected": 120,
+        "constraint_observed": 115,
+        "constraint_passes": 111,
+        "count_vectors": [
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              null,
+              10,
+              6,
+              10,
+              10,
+              10,
+              8,
+              10,
+              9,
+              9
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 0,
+            "repetition": 0,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              null,
+              10,
+              6,
+              10,
+              10,
+              10,
+              8,
+              10,
+              10,
+              10
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 1,
+            "repetition": 0,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              8,
+              10,
+              7,
+              5,
+              null,
+              10,
+              9,
+              null,
+              10,
+              5
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 0,
+            "repetition": 1,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          },
+          {
+            "ceiling_fraction": null,
+            "complete": false,
+            "counts": [
+              8,
+              10,
+              7,
+              8,
+              null,
+              10,
+              9,
+              null,
+              10,
+              6
+            ],
+            "mean": null,
+            "median": null,
+            "observation": 1,
+            "repetition": 1,
+            "tasks": [
+              "curated-0",
+              "curated-10",
+              "curated-16",
+              "curated-18",
+              "curated-2",
+              "curated-6",
+              "curated-7",
+              "curated-8",
+              "narrative-dev-01",
+              "narrative-dev-02"
+            ]
+          }
+        ],
+        "expected_outputs": 200,
+        "expected_sets": 20,
+        "generation_diagnostics": {
+          "empty": 0,
+          "refusal": 0,
+          "truncated": 0
+        },
+        "generation_diagnostics_valid_output_denominator": 190,
+        "label": "qwen35_9b",
+        "mean_check_count": null,
+        "mean_exact_duplicate_rate": null,
+        "mean_merged_pair_fraction": null,
+        "mean_non_singleton_response_share": null,
+        "mean_primary_count": null,
+        "mean_quality": null,
+        "mean_words": null,
+        "model": "qwen/qwen3.5-9b",
+        "mostly_merged_target_met": false,
+        "non_singleton_response_share_by_observation": [
+          null,
+          null
+        ],
+        "observed_outputs": 190,
+        "operational_floors": {
+          "complete": false,
+          "constraints": true,
+          "generation_feasibility": false,
+          "headroom": false,
+          "quality": true,
+          "reasoning_controls": true,
+          "repeatability": false
+        },
+        "operationally_feasible": false,
+        "original_parser_constraint_passes": 111,
+        "per_task": [
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 19,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": null,
+            "mean_primary_count": null,
+            "mean_quality": null,
+            "mean_words": null,
+            "non_singleton_response_share_by_observation": [
+              null,
+              null
+            ],
+            "observed_outputs": 19,
+            "quality_at_least_six": 19,
+            "refusal": 0,
+            "task": "curated-0",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 10.0,
+            "mean_primary_count": 10.0,
+            "mean_quality": 8.25,
+            "mean_words": 673.6,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-10",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 16,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 7.0,
+            "mean_primary_count": 6.5,
+            "mean_quality": 8.1,
+            "mean_words": 89.9,
+            "non_singleton_response_share_by_observation": [
+              0.45,
+              0.45
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 19,
+            "refusal": 0,
+            "task": "curated-16",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 8.0,
+            "mean_primary_count": 8.25,
+            "mean_quality": 8.0,
+            "mean_words": 273.85,
+            "non_singleton_response_share_by_observation": [
+              0.4,
+              0.2
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-18",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 16,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": null,
+            "mean_primary_count": null,
+            "mean_quality": null,
+            "mean_words": null,
+            "non_singleton_response_share_by_observation": [
+              null,
+              null
+            ],
+            "observed_outputs": 16,
+            "quality_at_least_six": 15,
+            "refusal": 0,
+            "task": "curated-2",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 7.5,
+            "mean_primary_count": 10.0,
+            "mean_quality": 7.85,
+            "mean_words": 428.7,
+            "non_singleton_response_share_by_observation": [
+              0.0,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-6",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 9.0,
+            "mean_primary_count": 8.5,
+            "mean_quality": 9.8,
+            "mean_words": 153.8,
+            "non_singleton_response_share_by_observation": [
+              0.25,
+              0.25
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "curated-7",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 0,
+            "constraint_passes": null,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": null,
+            "mean_primary_count": null,
+            "mean_quality": null,
+            "mean_words": null,
+            "non_singleton_response_share_by_observation": [
+              null,
+              null
+            ],
+            "observed_outputs": 15,
+            "quality_at_least_six": 15,
+            "refusal": 0,
+            "task": "curated-8",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 9.5,
+            "mean_primary_count": 9.75,
+            "mean_quality": 7.7,
+            "mean_words": 117.0,
+            "non_singleton_response_share_by_observation": [
+              0.1,
+              0.0
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 19,
+            "refusal": 0,
+            "task": "narrative-dev-01",
+            "truncated": 0
+          },
+          {
+            "constraint_expected": 20,
+            "constraint_passes": 20,
+            "empty": 0,
+            "expected_outputs": 20,
+            "mean_check_count": 7.0,
+            "mean_primary_count": 7.5,
+            "mean_quality": 9.25,
+            "mean_words": 132.85,
+            "non_singleton_response_share_by_observation": [
+              0.5,
+              0.35
+            ],
+            "observed_outputs": 20,
+            "quality_at_least_six": 20,
+            "refusal": 0,
+            "task": "narrative-dev-02",
+            "truncated": 0
+          }
+        ],
+        "provider": "deepinfra/bf16",
+        "quality_at_least_six": 187,
+        "repeat_count_close_sets": 16,
+        "returned_failure_diagnostics": {
+          "content_filtered": 0,
+          "empty_text": 0,
+          "missing_text": 0,
+          "observations": 0,
+          "truncated": 0
+        }
+      },
+      "threshold_support": {
+        "constraints_ge_108_of_120": "met_by_known_observations",
+        "quality_ge_180_of_200": "met_by_known_observations",
+        "repeat_count_close_ge_18_of_20": "unresolved_due_to_missing_observations"
+      }
+    }
+  ],
+  "interpretation": {
+    "bound_status": "Post hoc logical checks; original null summaries retained",
+    "judge_scope": "Automatic exploratory diagnostics, not human validation",
+    "missingness": "Missing observations are not measured failures",
+    "study_scope": "Three selected models, two families, ten reused development tasks"
+  },
+  "schema": "estr-small-generator-screen-terminal-summary-v1",
+  "scope": "Preserved terminal snapshot; no imputation or new inferential test",
+  "source": {
+    "binding_file_sha256": "edd8710257401c15be5b3d4102d9296ca2d8ce8cd965131dad24b6e5dca9051b",
+    "manifest_sha256": "ec2c05776f4d23afbfc8300a36466f394b8d371bb154ebf50dcb5762723560f5",
+    "referenced_source_files_verified": 1373,
+    "scientific_plan_sha256": "ae306f04ecff850e8912c1f2aa17fd337a5ef721653313d0e1e17cf7519a9cd5",
+    "terminal_report_sha256": "5252063a0383e3b75250aa3ea573f6242e715be117044f8ba783488b1c171cc3"
+  },
+  "source_complete": false,
+  "source_execution_readiness": {
+    "accounting_complete": true,
+    "complete_all_candidate_comparison": false,
+    "generation_control_failures": []
+  },
+  "source_follow_on_authorized": false,
+  "source_protocol": {
+    "bootstrap": null,
+    "constraint_version": "v0.2/paired-emphasis-sentence-sensitivity",
+    "constraints": {
+      "applicable_outputs": 120,
+      "minimum_passes": 108
+    },
+    "count_vectors": "Each repetition x preassigned Hydrogen observation forms a separate ten-task vector",
+    "generation_feasibility": {
+      "empty": 0,
+      "refusal": 0,
+      "truncated": 0
+    },
+    "headroom": {
+      "maximum_ceiling_fraction_each_vector": 0.2,
+      "maximum_median_each_vector": 7
+    },
+    "interpretation": "Operational exploratory floors are not human validation, calibrated judge qualification, a confirmatory claim, or approval of further experiments.",
+    "mostly_merged_target": {
+      "maximum_median_each_vector": 5
+    },
+    "quality": {
+      "minimum_scores_at_least_six": 180,
+      "outputs": 200
+    },
+    "repeatability": {
+      "minimum_sets_with_count_difference_at_most_one": 18,
+      "sets": 20
+    },
+    "scope": "exploratory candidate screen; all candidates retained; no automatic selection"
+  },
+  "source_selected_candidate": null,
+  "terminal_accounting": {
+    "accounting": {
+      "attempted_requests": 1360,
+      "committed_usd": 1.7057639313,
+      "known_cost_usd": 1.7057639313,
+      "unknown_cost_attempts": 0
+    },
+    "accounting_complete": true,
+    "binding_sha256": "32e00c85d3c7a153e44f4bf20857b5f5797829cd1c3f9e9cb9120805f135830b",
+    "complete": false,
+    "completed": {
+      "generation": 584,
+      "grouping": 156,
+      "quality": 584
+    },
+    "confirmatory": false,
+    "development_only": true,
+    "exploratory": true,
+    "historical_accounting": {
+      "attempted_requests": 287,
+      "committed_usd": 0.3673995225,
+      "known_cost_usd": 0.3673995225,
+      "unknown_cost_attempts": 0
+    },
+    "historical_failed_gates_preserved": true,
+    "initial_request_ids": 1340,
+    "main_eligible": false,
+    "new_accounting": {
+      "attempted_requests": 1073,
+      "committed_usd": 1.3383644088,
+      "known_cost_usd": 1.3383644088,
+      "unknown_cost_attempts": 0
+    },
+    "new_initial_request_ids": 1066,
+    "observations_complete": false,
+    "schedule_exhausted": true,
+    "schema": "estr-screen-completion-v1-accounting",
+    "missing_jobs_count": 56,
+    "remaining_jobs_count": 0,
+    "generation_control_failures_count": 0
+  }
+}

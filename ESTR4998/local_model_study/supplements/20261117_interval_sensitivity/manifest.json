@@ -1,0 +1,21 @@
+{
+  "schema": "local-interval-sensitivity-manifest-v1",
+  "status": "post_hoc_sensitivity_after_review_not_replacement_or_confirmation",
+  "analysis_sha256": "baa5a89f3c6619a0bead2fdb5cd3fbdd67d842ce8065889aaf8b63a814ad415f",
+  "source_sha256": {
+    "task_metrics.csv": "4421489b672cadaa8e3a6432f64ed398ae2aa98099393dbf487b9f093e015167",
+    "contrasts.csv": "0266c1fd4646980f575d1e7b1f5fc6af1e05c8fea7127ec38c93266923212592"
+  },
+  "output_sha256": {
+    "summary.json": "2afc90fc10783fb089a02a378d92d494cd3ce70ecdfde30f3dec3e2889064a44",
+    "contrasts.csv": "2f05f6f38b655fd73b7c930748c9380bd9ed2814373f2198b66ee60edefa91d5",
+    "RESULTS.md": "602b2fa2e1b83f29cb5fb5b9a97164e0e41910a68f14c9d5384f9b9aa8509441"
+  },
+  "environment": {
+    "numpy": "2.1.3",
+    "scipy": "1.16.2"
+  },
+  "original_bootstrap_bounds_preserved": true,
+  "new_generator_responses": 0,
+  "external_api_calls": 0
+}

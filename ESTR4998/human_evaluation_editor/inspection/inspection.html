@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{label}} · Manual inspection</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/inspection.css"><script src="/inspection.js" defer></script></head>
+<body data-file="{{inspection_csv}}">{{nav}}<header><div><span class="eyebrow">{{label}} / SYNTHETIC DEMO / MANUAL INSPECTION</span><h1>Manual inspection</h1></div><a href="/download-inspection" id="download" class="download">Download CSV</a></header><main>
+<section class="toolbar"><div><strong id="progress">Loading…</strong><progress id="bar" max="100" value="0"></progress></div><button id="unchecked">Next unchecked</button><label>Jump to item <select id="jump" aria-label="Jump to item"></select></label></section>
+<details class="instructions"><summary>How to inspect</summary>
+<p><strong>Work on your own.</strong> Do not look at the other member's answers, or discuss items, until you have both finished. The inspection never changes an instrument: write problems down and fix them later as a reviewed change.</p>
+<p><strong>Read the texts first.</strong> Form your own view, then press <em>Show the instrument's verdict</em> to see the score, which end of the ranking the item comes from, and any per-response labels. Then record whether the score matches what you see.</p>
+<p><strong>Order.</strong> Items follow the guide's reading order: the within-prompt sets first, then single responses, then the overall extremes. If you run out of time, stop and note where.</p>
+<p><strong>For every highest-scoring item, also check for reward hacking:</strong> irrelevance; padding or verbosity; the same story with new names, settings or adjectives; lists of alternatives instead of one answer; instruction leakage; disclaimers or refusals; degenerate text (non-English fragments, loops, cut off at the token ceiling).</p>
+<p><strong>Your answers:</strong> <em>yes</em> if the score matches what you see, <em>no</em> for a mismatch, <em>unsure</em> otherwise, with one sentence in the note.</p>
+</details>
+<section class="request"><span id="item-id" class="eyebrow"></span><h2 id="heading"></h2><div class="ask"><p><strong>Ask yourself:</strong> <span id="ask"></span></p><p><strong>It is a mismatch if:</strong> <span id="mismatch"></span></p></div><h3>Request</h3><p id="prompt"></p></section>
+<section class="verdict"><button id="reveal" type="button" aria-expanded="false">Show the instrument's verdict</button><div id="verdict" hidden><p id="side"></p><p id="score-line"></p></div></section>
+<div id="responses" class="response-list"></div>
+<section class="rating">
+<div class="question" role="group" aria-labelledby="agree-label"><h2 id="agree-label">Does the score match what you see?</h2><div class="choices" data-choice="agrees"><button data-value="yes" aria-pressed="false">Yes, it matches</button><button data-value="no" aria-pressed="false">No, a mismatch</button><button data-value="unsure" aria-pressed="false">Unsure</button></div><p class="hint">Select a highlighted answer again to clear it.</p></div>
+<label for="note">Note <span>(one sentence on what you see)</span></label><textarea id="note" rows="3" maxlength="10000"></textarea></section>
+<footer><button id="previous">← Previous</button><div id="status" role="status" aria-live="polite">Loading sheet…</div><button id="retry">Retry save</button><button id="next" class="primary">Next →</button></footer></main></body></html>

@@ -1,0 +1,18 @@
+/* Manual-inspection additions; the base look comes from /style.css. */
+.request .ask{background:#e8eee4;border-radius:8px;padding:4px 16px;margin:14px 0}
+.request .ask p{margin:10px 0}
+.request h3{font-size:16px;margin:18px 0 0;color:#446055}
+.verdict{margin:0 0 20px}
+.verdict #verdict{margin-top:12px;padding:14px 18px;border-radius:10px;border:1px solid #d9c9a7;background:#fbf6ea}
+.verdict #verdict p{margin:6px 0;line-height:1.6}
+.verdict #side{font-weight:600}
+.response-list{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.response-list article{border:1px solid #dce2d6;border-radius:12px;background:white;padding:20px 24px}
+.response-list article:only-child{grid-column:1/-1}
+.response-list h3{font-size:16px;margin:0 0 10px;color:#446055;border-bottom:1px solid #e3e8df;padding-bottom:10px}
+.response-list .detail{font-weight:400;color:#8a5a12}
+.question{margin-top:6px}
+.question h2{margin-bottom:12px}
+.rating .hint{font-size:14px;margin:4px 0 22px}
+[hidden]{display:none!important}
+@media(max-width:700px){.response-list{grid-template-columns:1fr}.response-list article{padding:18px}}

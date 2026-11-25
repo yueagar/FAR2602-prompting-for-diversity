@@ -1,0 +1,6 @@
+# Versions used for the offline analyses, Figure 1, and tests in this release.
+numpy==2.1.3
+scipy==1.16.2
+matplotlib==3.10.6
+PyYAML==6.0.1
+pytest==9.0.3

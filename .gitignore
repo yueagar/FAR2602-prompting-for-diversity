@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.p12
+*.p8
+access_password*.txt
+backups/
+runs/
+requests/

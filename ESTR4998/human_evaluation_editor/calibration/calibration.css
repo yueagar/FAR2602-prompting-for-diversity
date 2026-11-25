@@ -1,0 +1,10 @@
+/* Calibration sheet additions; the base look comes from /style.css. */
+.request .proposed{background:#e8eee4;border-radius:8px;padding:12px 14px;margin-top:14px}
+.request .proposed:empty{display:none}
+.rating .round1{font-weight:600;color:inherit;margin:0 0 18px}
+.rating input.line{width:100%;margin-bottom:18px}
+.question{border-top:1px solid #e3e8df;padding-top:14px;margin-top:6px}
+.question p{margin:0 0 12px;color:inherit}
+.rating .hint{font-size:14px;margin:4px 0 22px}
+#question-fields{margin-bottom:18px}
+[hidden]{display:none!important}

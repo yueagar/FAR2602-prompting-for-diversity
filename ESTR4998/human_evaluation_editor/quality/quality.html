@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{label}} · Quality ratings</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/quality.css"><script src="/quality.js" defer></script></head>
+<body data-file="{{quality_csv}}">{{nav}}<header><div><span class="eyebrow">{{label}} / SYNTHETIC DEMO / HUMAN EVALUATION</span><h1>Quality ratings</h1></div><a href="/download-quality" id="download" class="download">Download CSV</a></header><main>
+<section class="toolbar"><div><strong id="progress">Loading…</strong><progress id="bar" max="100" value="0"></progress></div><button id="unscored">Next unscored</button><label>Jump to item <select id="jump" aria-label="Jump to item"></select></label></section>
+<details class="instructions"><summary>Rating instructions</summary>
+<p>Rate independently. Do not discuss items with the other rater until both sheets are complete. Rows are in random order and do not say which condition produced them; do not try to work it out.</p>
+<p>Read the request and the whole response before scoring. Give each of the four dimensions a whole number from 1 to 5.</p>
+
+<p>Use the notes for anything the scale cannot express, such as factual errors, a response cut off mid-sentence, or an off-topic answer.</p>
+</details>
+<section class="request"><span id="item-id" class="eyebrow"></span><h2>Request</h2><p id="prompt"></p></section>
+<div class="responses single"><article><h2>Response</h2><div id="response" class="response"></div></article></div>
+<section class="rating"><h2>Score this response from 1 to 5 on each dimension</h2>
+<p class="judge-only">Judge only this response. Do not reward length. Do not reward unusual wording unless it makes the response work better. Invented content is appropriate when the request asks for it.</p>
+<div class="dimension" role="group" aria-labelledby="rubric-relevance"><p id="rubric-relevance" class="rubric">RELEVANCE - does it respond to what was asked? 1 = ignores the request, 5 = directly fulfils it.</p><div class="choices scale" data-dimension="relevance" data-name="Relevance"></div></div>
+<div class="dimension" role="group" aria-labelledby="rubric-coherence"><p id="rubric-coherence" class="rubric">COHERENCE - is it comprehensible and internally consistent? 1 = incoherent or self-contradictory, 5 = clear throughout.</p><div class="choices scale" data-dimension="coherence" data-name="Coherence"></div></div>
+<div class="dimension" role="group" aria-labelledby="rubric-constraints"><p id="rubric-constraints" class="rubric">CONSTRAINTS - does it meet the request's explicit constraints, such as length, number of sentences, named characters, setting, or required elements, and give one response rather than a list of alternatives or an explanation of its approach? 1 = ignores them, 5 = meets every one. If the request states no explicit constraint, judge only the one-response requirement.</p><div class="choices scale" data-dimension="constraints" data-name="Constraints"></div></div>
+<div class="dimension" role="group" aria-labelledby="rubric-effectiveness"><p id="rubric-effectiveness" class="rubric">EFFECTIVENESS - does it work as the kind of text requested: a short narrative, character, worldbuilding element, or imaginative description? 1 = does not work as that kind of text, 5 = works well as it.</p><div class="choices scale" data-dimension="effectiveness" data-name="Effectiveness"></div></div>
+<p class="hint">Select a highlighted score again to clear it.</p>
+<label for="notes">Notes <span>(optional)</span></label><textarea id="notes" rows="4" maxlength="10000" placeholder="Factual errors, a response cut off mid-sentence, an off-topic answer…"></textarea></section>
+<footer><button id="previous">← Previous</button><div id="status" role="status" aria-live="polite">Loading sheet…</div><button id="retry">Retry save</button><button id="next" class="primary">Next →</button></footer></main></body></html>

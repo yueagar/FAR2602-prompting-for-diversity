@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{label}} · Calibration</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/calibration.css"><script src="/calibration.js" defer></script></head>
+<body data-file="{{calibration_csv}}">{{nav}}<header><div><span class="eyebrow">{{label}} / SYNTHETIC DEMO / RATING CALIBRATION</span><h1>Calibration</h1></div><a href="/download-calibration" id="download" class="download">Download CSV</a></header><main>
+<section class="toolbar"><div><strong id="progress">Loading…</strong><progress id="bar" max="100" value="0"></progress></div><button id="unanswered">Next unanswered</button><label>Jump to item <select id="jump" aria-label="Jump to item"></select></label></section>
+<details class="instructions" open><summary>How to fill this in</summary>
+<p><strong>Round 1 stays as recorded.</strong> Nothing here changes either rater's round-1 sheet or its result. This sheet records your own explanation; it is not a new rating and not a reliability result.</p>
+<p><strong>Fill it in on your own first.</strong> For each pair, write what the central content of each response is and whether it is the same, before comparing with the other rater. Instrument outputs are not shown.</p>
+<p><strong>Written definition:</strong> two responses are equivalent if a person who had read one would gain essentially nothing from reading the other: the same central plot, character, idea, or image, differing only in wording, names, formatting, length, ordering, or minor detail. They are not equivalent if the central content differs, even when the structure or tone is shared.</p>
+<p><strong>Candidate clarification, to discuss:</strong> judge only the central content: what happens, who it happens to, the main idea or image. Shared writing style, tone, genre, setting type or story structure does not make two responses equivalent. Ask: after reading A, would reading B tell me a different story or idea?</p>
+</details>
+<section class="request"><span id="item-id" class="eyebrow"></span><h2 id="request-title">Request</h2><p id="prompt"></p><p id="proposed" class="proposed"></p></section>
+<div id="responses" class="responses"><article><h2>Response A</h2><div id="response-a" class="response"></div></article><article><h2>Response B</h2><div id="response-b" class="response"></div></article></div>
+<section class="rating">
+<div id="pair-fields">
+<p id="round1" class="round1"></p>
+<label for="content-a">Central content of A <span>(one line)</span></label><input id="content-a" class="line" maxlength="10000" data-field="content_a">
+<label for="content-b">Central content of B <span>(one line)</span></label><input id="content-b" class="line" maxlength="10000" data-field="content_b">
+<div class="question" role="group" aria-labelledby="same-label"><p id="same-label">Is the central content the same?</p><div class="choices" data-choice="same_content"><button data-value="yes" aria-pressed="false">Yes, same</button><button data-value="no" aria-pressed="false">No, different</button><button data-value="unsure" aria-pressed="false">Unsure</button></div></div>
+<div class="question" role="group" aria-labelledby="style-label"><p id="style-label">Did writing style, tone or story structure affect your round-1 label?</p><div class="choices" data-choice="style_affected"><button data-value="yes" aria-pressed="false">Yes</button><button data-value="no" aria-pressed="false">No</button><button data-value="unsure" aria-pressed="false">Unsure</button></div></div>
+<p class="hint">Select a highlighted answer again to clear it.</p>
+</div>
+<div id="question-fields"><label for="answer">Your answer</label><textarea id="answer" rows="5" maxlength="10000" data-field="answer" placeholder="Agree with the proposal, amend it, or say what you would do instead…"></textarea></div>
+<label for="notes">Notes <span>(optional)</span></label><textarea id="notes" rows="3" maxlength="10000" data-field="rater_notes" placeholder="Anything else to raise in the discussion…"></textarea></section>
+<footer><button id="previous">← Previous</button><div id="status" role="status" aria-live="polite">Loading sheet…</div><button id="retry">Retry save</button><button id="next" class="primary">Next →</button></footer></main></body></html>
