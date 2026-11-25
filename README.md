@@ -32,4 +32,4 @@ python3 -m venv .venv
 
 The public replay starts at recorded numerical measurements or report summaries, as specified for each study. Repeating generation, independently scoring the original texts or repeating the human rating exercise requires inputs beyond this release. The task-level intervals describe the sampled development tasks. The [second-semester directory](ESTR4999/) is reserved for the final submission.
 
-For a version-specific citation, use the GitHub permalink to the commit shown by `git rev-parse HEAD`. The first submission snapshot is archived under `estr4998-interim-2026-11-25`. The [MIT license](LICENSE) and [third-party notices](THIRD_PARTY.md) describe attribution.
+Cite the [tagged ESTR4998 interim submission](https://github.com/yueagar/FAR2602-prompting-for-diversity/tree/estr4998-interim-2026-11-25). To record its exact commit, run `git rev-parse 'estr4998-interim-2026-11-25^{commit}'`. The [MIT license](LICENSE) and [third-party notices](THIRD_PARTY.md) describe attribution.
