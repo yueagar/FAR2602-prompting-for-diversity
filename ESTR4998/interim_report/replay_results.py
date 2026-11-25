@@ -85,7 +85,7 @@ def supplementary_measures():
     screen = json.loads((DATA / "small_generator_screen_20261117.json").read_text())
     for candidate in screen["candidates"]:
         coverage = candidate["coverage"]
-        print(f"E1 {candidate['label']}: {coverage['generated_outputs']}/200 outputs, "
+        print(f"Study F {candidate['label']}: {coverage['generated_outputs']}/200 outputs, "
               f"{coverage['complete_response_sets']}/20 complete response sets")
 
 
